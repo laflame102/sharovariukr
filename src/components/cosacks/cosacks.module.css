@@ -1,0 +1,46 @@
+.wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container {
+  width: var(--container-width);
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.leftImage {
+  float: left;
+  margin-right: 15px;
+  width: 300px;
+  height: auto;
+}
+
+.textWithImage p {
+  width: 1100px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: justify;
+}
+
+.name {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.rightImage {
+  float: right;
+  margin-left: 15px;
+  width: 300px;
+  height: auto;
+}

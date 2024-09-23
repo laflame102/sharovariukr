@@ -1,0 +1,66 @@
+.wrapper {
+  width: 100%;
+  height: 100px;
+  background-color: #eef2e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: all 0.3s linear;
+  transform: translateY(0);
+}
+
+.visibleHeader {
+  transform: translateY(0);
+}
+
+.hiddenHeader {
+  transform: translateY(-100%);
+}
+
+.container {
+  width: var(--container-width);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 32px;
+  width: 32px;
+}
+
+.logoText {
+  font-family: "Kumbh Sans";
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.listItemText {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.listItemText:hover {
+  text-decoration: underline;
+}

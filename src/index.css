@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,86 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: "Kumbh Sans";
+  cursor: default;
+}
+
+input,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(247, 247, 247, 1);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3) inset;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(104, 104, 104, 1);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (max-width: 1600px) {
+  :root {
+    --container-width: 1180px;
+    --heading-size: 28px;
+    --header-height: 80px;
+  }
+}
+
+@media (max-width: 1279px) {
+  :root {
+    --container-width: 710px;
+    --header-height: 53px;
+  }
+}
+
+@media (max-width: 770px) {
+  :root {
+    --container-width: calc(100% - 32px);
+    --heading-size: 24px;
+    --header-height: 48px;
+  }
 }
