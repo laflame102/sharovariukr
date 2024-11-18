@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import s from "./header.module.css";
 import logo from "../../images/logo.svg";
 
@@ -13,29 +14,24 @@ const Header = () => {
           <nav>
             <ul className={s.list}>
               <li className={s.listItem}>
-                <a href="/" className={s.listItemText}>
+                <Link to="/" className={s.listItemText}>
                   Головна сторінка
-                </a>
+                </Link>
               </li>
               <li className={s.listItem}>
-                <a href="/history" className={s.listItemText}>
+                <Link to="/history" className={s.listItemText}>
                   Історія шароварів
-                </a>
+                </Link>
               </li>
               <li className={s.listItem}>
-                <a href="/regional" className={s.listItemText}>
-                  Регіональні відмінності
-                </a>
-              </li>
-              <li className={s.listItem}>
-                <a href="/making" className={s.listItemText}>
+                <Link to="/making" className={s.listItemText}>
                   Виготовлення шароварів
-                </a>
+                </Link>
               </li>
               <li className={s.listItem}>
-                <a href="/gallery" className={s.listItemText}>
+                <Link to="/gallery" className={s.listItemText}>
                   Галерея та відгуки
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
